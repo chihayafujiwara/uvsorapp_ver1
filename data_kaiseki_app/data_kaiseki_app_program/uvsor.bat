@@ -1,1 +1,0 @@
-streamlit run  C:\Users\%USERNAME%\UVSOR_app\data_kaiseki_app\data_kaiseki_app_program\UVSOR.py
