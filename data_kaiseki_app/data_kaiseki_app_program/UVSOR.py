@@ -24,7 +24,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-image1 = Image.open('/UVSOR_app/data_kaiseki_app/data_control/image1.png')
+image1 = Image.open('data_kaiseki_app/data_control/image1.png')
 st.sidebar.image(image1)
 
 with st.sidebar.expander("Select"):

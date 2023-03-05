@@ -18,7 +18,7 @@ def calc(uploaded_file,fir,step):
     data = frame2.join(frame1)
     df = data.pivot(index = 'em', columns = 'ex', values = 'inte').reset_index()
     
-    df3 = pd.read_table('../data_control/hoseiuvsor.csv',sep=',')
+    df3 = pd.read_table('data_kaiseki_app/data_control/hoseiuvsor.csv',sep=',')
 
     set = [i*step + fir for i in range(int(len(df1)/1340))]
     
