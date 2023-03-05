@@ -3,7 +3,6 @@ from cProfile import label
 from distutils.command.build_scripts import first_line_re
 import pandas as pd
 import numpy as np
-import matplotlib.cm as cmArial
 import streamlit as st
 from urllib3 import encode_multipart_formdata
 from PIL import Image
