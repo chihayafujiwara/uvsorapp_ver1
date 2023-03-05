@@ -8,7 +8,7 @@ import page6
 
 def atl(save_dir):
     col1, col2, col3 = st.columns([1,2, 1])
-    image = Image.open('../data_control/image.png')
+    image = Image.open('data_kaiseki_app/data_control/image.png')
     (width, height) = (image.width // 2, image.height // 2)
             # 画像をリサイズする
     img_resized = image.resize((width, height))

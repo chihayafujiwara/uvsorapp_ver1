@@ -1,9 +1,7 @@
 import pandas as pd
 import streamlit as st
-import os
+#import os
 import numpy as np
-
-#users = os.path.join(os.path.join(os.environ['USERPROFILE']),'UVSOR_app\\data_kaiseki_app')
 
 @st.cache(suppress_st_warning=True)
 def calc(uploaded_file,fir,step):
