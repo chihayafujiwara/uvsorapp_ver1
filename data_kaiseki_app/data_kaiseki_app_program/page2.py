@@ -10,7 +10,7 @@ def page2(genre,X,Y,p2,save_dir):
     col1, col2 ,col3  = st.columns([5,2,2])
 
     with col2.expander('User temprate'):
-        path_list, name_list = glob.filesearch('../data_control//2dmap_para')
+        path_list, name_list = glob.filesearch('data_kaiseki_app/data_control//2dmap_para')
         d_name = st.selectbox('Figure type',(name_list))
         dff = counter.counter_para(d_name)
 
@@ -44,7 +44,7 @@ def page2(genre,X,Y,p2,save_dir):
             dff[1][7] = bins
             dff[1][9] = xaxis
             dff[1][10] = yaxis
-            dff.to_csv('../data_control/2dmap_para/'+str(name_temp)+'.csv', index=False)
+            dff.to_csv('data_kaiseki_app/data_control/2dmap_para/'+str(name_temp)+'.csv', index=False)
 
     
     with col2.expander("File setting"):

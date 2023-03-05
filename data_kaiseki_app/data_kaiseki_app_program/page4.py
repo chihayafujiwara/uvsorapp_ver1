@@ -1,4 +1,5 @@
 import streamlit as st
+import subprocess
 from ple import glob
 from ple import counter
 from ple import precalc
@@ -13,7 +14,7 @@ def page4(genre,df5,wb,save_dir):
     col3.write('パラメータエクセルファイル')
     
     if col3.button('パラメータ入力ファイル open'):
-        EXCEL = '../data_control/fittpara.csv'
+        EXCEL = 'data_kaiseki_app/data_control/fittpara.csv'
         subprocess.Popen(['start',EXCEL], shell=True)
 
     col2.write('Choose the setting')
@@ -53,7 +54,7 @@ def page4(genre,df5,wb,save_dir):
     # 条件を満たないときは処理を停止する
     if col1.button('Run gaussian fit'):   
         ex = int(ex_)
-        df = pd.read_csv('../data_control/fittpara.csv',encoding="shift-jis")[0:11]
+        df = pd.read_csv('data_kaiseki_app/data_control/fittpara.csv',encoding="shift-jis")[0:11]
         data = gf.gaussian(df,x,y,m)
         csv = gfplot.g_plot(data[0],data[1],data[2],data[4])
 

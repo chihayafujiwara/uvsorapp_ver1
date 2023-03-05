@@ -12,10 +12,9 @@ from ple import uvsor1
 from ple import uvsor2
 
 
-
 def aple(save_dir):
     col1, col2, col3 = st.columns([1,2, 1])
-    image = Image.open('../data_control/image.png')
+    image = Image.open('data_kaiseki_app/data_control/image.png')
     (width, height) = (image.width // 2, image.height // 2)
             # 画像をリサイズする
     img_resized = image.resize((width, height))
@@ -62,7 +61,7 @@ def aple(save_dir):
     Y = database[1]
     p2 = database[2]
     #dff = counter_para()
-    wb = pd.read_table('../data_control/Hample.csv',sep=',')   
+    wb = pd.read_table('data_kaiseki_app/data_control/Hample.csv',sep=',')   
     #-------------------------- 
 
     if genre == 'Main page':
