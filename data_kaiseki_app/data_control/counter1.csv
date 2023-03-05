@@ -1,0 +1,9 @@
+0,1,2
+fontsize,15,
+figure h,20,
+figure w,5,
+em_min,380,nm
+em_max,930,nm
+ex_min,200,nm
+ex_max,540,nm
+bin,10,

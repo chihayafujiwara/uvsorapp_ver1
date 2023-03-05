@@ -1,0 +1,15 @@
+0,1,2
+color1,#f98b16,
+color2,#4682b4,
+xaxis1,WL [nm],[nm]
+xaxis2,WL [nm],
+yaxis1,Int [a.u.],
+yaxis2,Int [a.u.],
+fig_size_w1,6,
+fig_size_w2,6,
+fig_size_h1,4,
+fig_size_h2,4,
+fs1,15,
+fs2,15,
+options1,15,
+options2,Line',
